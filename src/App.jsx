@@ -9,8 +9,8 @@ function App() {
         <div className="header">
           <img src={logo} alt="netflix" className="logo" />
         </div>
-        {data.map((type) => {
-          return <Section category={type.category} images={type.images} />;
+        {data.map((elem) => {
+          return <Section category={elem.category} images={elem.images} />;
         })}
       </div>
     </>
